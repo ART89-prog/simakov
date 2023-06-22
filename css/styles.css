@@ -634,6 +634,10 @@ form .line input {
     z-index: 2;
 }
 
+.service_item-link img {
+    width: 23px;
+    height: 23px;
+}
 .service_item:hover {
     background: url(../images/service-item-bg.svg), #FE7449;
     background-position: center;
@@ -736,6 +740,8 @@ form .line input {
 .callback button img {
     display: block;
     margin-left: 10px;
+    width: 27px;
+    height: 27px;
 }
 
 .callback .form_politic {
@@ -755,8 +761,15 @@ form .line input {
 
 .about_img {
     margin-left: -300px;
+    width: 910px;
+    height: 768px;
 }
 
+.about_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .about_info {
     width: 50%;
     padding: 88px 20px 50px 50px;
@@ -948,10 +961,15 @@ form .line input {
     position: absolute;
     left: -305px;
     bottom: 0;
+    width: 587px;
+    height: 798px;
 }
 
 .last-section_img img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .last-section button {
@@ -982,6 +1000,8 @@ form .line input {
 .last-section button img {
     display: block;
     margin-left: 10px;
+    width: 27px;
+    height: 27px;
 }
 
 .form_politic {
@@ -1054,6 +1074,7 @@ footer .cont {
     width: 100%;
     padding: 50px;
     background: #12AD7A;
+    display: none;
 }
 
 .modal_callback-title {
