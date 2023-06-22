@@ -303,38 +303,185 @@ button {
 
 
 header {
-    padding: 10px 0 15px;
+    padding: 14px 0 21px;
 }
-
 header .cont {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 header .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 447px);
+    width: 336px;
 }
-
 header .menu .item a {
     text-decoration: none;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    color: var(--text_color);
+    font-weight: 400;
+    line-height: 22px;
+    color: #000;
+    letter-spacing: 0.05em;
     transition: all .4s;
     white-space: nowrap;
-    margin-right: 42px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    position: relative;
 }
-
+header .menu .item:first-child a::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #FE7449;
+    left: -50px;
+    top: 5px;
+}
+header .menu .item:first-child a::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #FE7449;
+    left: -50px;
+    top: 12px;
+}
 header .menu .item a:hover {
-    color: var(--bg);
+    color: #333;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+}
+.header_logo img {
+    display: block;
+    margin-right: 21px;
+}
+header .btn {
+    width: 228px;
+    height: 62px;
+    border-radius: 50px;
+    border: 1px solid #FE7449;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 
-.header .menu .item a:active {
-    color: var(--bg);
+
+.first-section {
+    background: url(../images/first-section-bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    
 }
+.first-section .cont {
+    display: flex;
+    justify-content: space-between;
+    position: relative;min-height: 822px;
+}
+.first-section_info {
+    margin-top: 52px;
+}
+.first-section_title {
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 130px;
+    margin-bottom: 136px;
+}
+.first-section_title span {
+    font-weight: 500;
+    color: #FE7449;
+}
+.form_title {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+form .line {
+    display: flex;
+    align-items: center;
+}
+form .line .field {
+    width: 400px;
+    position: relative;
+    margin-right: 10px;
+}
+form .line .field img {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+form .line input {
+    padding: 0 20px 0 94px;
+    width: 100%;
+    height: 85px;
+    border-radius: 100px;
+    border: none;
+}
+.first-section_img {
+    position: absolute;
+    right: -210px;
+    bottom: 0;
+}
+.first-section_img img {
+    display: block;
+}
+.first-section button {
+    width: 400px;
+    height: 85px;
+    border-radius: 100px;
+    background: #FE7449;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-section button img {
+    display: block;
+    margin-left: 10px;
+}
+.form_politic {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-top: 20px;
+    color: #fff;
+}
+.first-section_author {
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.first-section_name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31px;
+    margin-bottom: 9px;
+}
+.first-section_post {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
