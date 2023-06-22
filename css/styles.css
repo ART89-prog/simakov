@@ -366,6 +366,7 @@ header .menu .item a:hover {
     line-height: 28px;
     color: #000;
     margin-right: 25px;
+    white-space: nowrap;
 }
 
 .header_logo img {
@@ -374,7 +375,7 @@ header .menu .item a:hover {
 }
 
 header .btn {
-    width: 228px;
+    min-width: 228px;
     height: 62px;
     border-radius: 50px;
     border: 1px solid #FE7449;

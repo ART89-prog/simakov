@@ -23,12 +23,28 @@ $(() => {
 	var swiper = new Swiper(".about_sertificat .swiper", {
 		slidesPerView: 3,
 		spaceBetween: 10,
-		// centeredSlides: true,
+		loop: true,
 		allowTouchMove: false,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			0: {
+				spaceBetween: 20,
+				slidesPerView: 3,
+				centeredSlides: true,
+				allowTouchMove: true,
+			},
+			767: {
+				spaceBetween: 20,
+				slidesPerView: 3
+			},
+			1023: {
+				spaceBetween: 10,
+				slidesPerView: 3
+			}
+		}
 	});
 
 

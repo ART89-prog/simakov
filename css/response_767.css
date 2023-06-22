@@ -1,6 +1,59 @@
 @media print, (max-width: 767px) {
 
-
+    .first-section form .line .field {
+        width: 100%;
+    }
+    .first-section button {
+        width: 100%;
+    }
+    .first-section_img {
+        display: none;
+    }
+    .service_items > * {
+        width: 100%;
+    }
+    .service_box:nth-child(2) .service_item:nth-child(9) {
+        width: 100%;
+    }
+    
+    .service_box:nth-child(2) .service_item:nth-child(10) {
+        width: 100%;
+    }
+    
+    .service_box:nth-child(3) .service_item:nth-child(5) {
+        width: 100%;
+    }
+    
+    .service_box:nth-child(3) .service_item:nth-child(6) {
+        width: 100%;
+    }
+    
+    .service_box:nth-child(4) .service_item:nth-child(5) {
+        width: 100%;
+    }
+    
+    .service_box:nth-child(4) .service_item:nth-child(6) {
+        width: 100%;
+    }
+    .about_sertificat .swiper-slide-active {
+        transform: scale(1.3);
+        z-index: 88;
+    }
+    .about_sertificat .swiper {
+        padding: 30px 0;
+    }
+    .about_sertificat .swiper-slide {
+        transition: all .4s;
+    }
+    .about_sertificat .swiper-slide img {
+        width: 100%;
+    }
+    .about_info:before {
+        display: none;
+    }
+    .about_info {
+        padding: 0;
+    }
 
 
 
