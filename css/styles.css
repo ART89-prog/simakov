@@ -494,6 +494,8 @@ form .line input {
 }
 .service_title {
     position: absolute;
+    right: 0;
+    top: -60px;
     font-weight: 700;
     font-size: 300px;
     line-height: 125%;
@@ -610,6 +612,7 @@ form .line input {
     background-repeat: no-repeat;
     background-size: cover; 
     padding: 97px 0 97px;
+    margin-bottom: 20px;
 }
 .callback_title {
     font-size: 60px;
@@ -653,4 +656,259 @@ form .line input {
 }
 .callback .form_politic {
     text-align: center;
+}
+
+
+
+.about {
+    margin-bottom: 195px;
+}
+.about .cont {
+    display: flex;
+    justify-content: space-between;
+}
+.about_img {
+    margin-left: -300px;
+}
+.about_info {
+    width: 50%;
+    padding: 88px 20px 50px 50px;
+    position: relative;
+}
+.about_info:before {
+    position: absolute;
+    content: "";
+    background: #F9F9F9;
+    top: 0;
+    right: calc(0% - 1500px);
+    width: calc(100% + 1500px);
+    height: calc(100% - 100px);
+    z-index: 0;
+}
+.about_name {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.about_label {
+    display: flex;
+    margin-bottom: 31px;
+    position: relative;
+}
+.about_label p {
+    display: block;
+    padding: 10px 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 500px;
+}
+.about_label p + p {
+    margin-left: 5px;
+}
+.about_post {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.about ul {
+    list-style: none;
+    margin-bottom: 73px;
+}
+.about ul li {
+    padding-left: 70px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.about ul li + li {
+    margin-top: 20px;
+}
+.about ul li:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #12AD7A;
+    left: 0;
+    top: 10px;
+}
+.about_sertificat {
+    display: flex;
+    position: relative;
+}
+.about_sertificat a {
+    text-decoration: none;
+}
+
+
+
+.contacts {
+    margin-bottom: 100px;
+}
+.map_wrap {
+    position: relative;
+    max-width: 100%;
+    transform: translateZ(0);
+    width: 100%;
+    height: 500px;
+}
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contacts_block {
+    padding: 60px 100px;
+    background: #12AD7A;
+    display: inline-flex;
+    align-items: center;
+    top: -95px;
+    left: 0;
+    position: absolute;
+}
+.contacts_block-icon {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+.contacts_block-adress {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 35px;
+    color: #fff;
+}
+
+
+
+
+.last-section {
+    background: url(../images/last-section-bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    margin-bottom: 20px;
+}
+.last-section .cont {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 992px;
+}
+.last-section_info {
+    margin-top: 175px;
+    margin-left: 250px;
+}
+.last-section_title {
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 130px;
+    margin-bottom: 136px;
+}
+.last-section_title span {
+    font-weight: 500;
+    color: #FE7449;
+}
+.form_title {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.last-section form {
+    max-width: 810px;
+    width: 100%;
+    margin-left: auto;
+}
+.last-section form .line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.last-section_img {
+    position: absolute;
+    left: -305px;
+    bottom: 0;
+}
+.last-section_img img {
+    display: block;
+}
+.last-section button {
+    width: 400px;
+    height: 85px;
+    border-radius: 100px;
+    background: #FE7449;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-section button img {
+    display: block;
+    margin-left: 10px;
+}
+.form_politic {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-top: 20px;
+    color: #fff;
+}
+.last-section_author {
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 500px;
+    position: absolute;
+    bottom: 26px;
+    right: -150px;
+}
+.last-section_name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31px;
+    margin-bottom: 9px;
+}
+.last-section_post {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+
+footer {
+    padding: 50px 0 31px;
+    background: #fff;
+}
+footer .cont {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_left {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.footer_pravo {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.footer_politic {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color: #FE7449;
+    text-decoration: none;
 }

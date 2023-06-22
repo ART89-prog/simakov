@@ -101,7 +101,7 @@
 
 
 			<section class="service">
-				<!-- <div class="service_title">услуги</div> -->
+				<div class="service_title">услуги</div>
 				<div class="cont">
 					<div class="service_box">
 						<div class="service_box-top">
@@ -406,6 +406,7 @@
 
 
 
+
 			<section class="about">
 				<div class="cont">
 					<div class="about_img">
@@ -424,18 +425,79 @@
 							<li>Проводит около 400 операций в год</li>
 						</ul>
 						<div class="about_sertificat">
-							<a href="images/sertificat.png">
+							<a href="images/sertificat.png" data-fancybox="gallery">
 								<img src="images/sertificat.png" alt="">
 							</a>
-							
+							<a href="images/sertificat.png" data-fancybox="gallery">
+								<img src="images/sertificat.png" alt="">
+							</a>
+							<a href="images/sertificat.png" data-fancybox="gallery">
+								<img src="images/sertificat.png" alt="">
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
 
-			<footer>
+
+
+			<section class="contacts" id="contacts">
+				<div class="map_wrap">
+					<div id="map"></div>
+					<div class="cont">
+						<div class="contacts_block">
+							<div class="contacts_block-icon">
+								<img src="images/map.svg" alt="">
+							</div>
+							<div class="contacts_block-adress">ул. Ярославская,<br>	д. 4, корп.2 </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="last-section">
+				<div class="cont">
+					<div class="last-section_img">
+						<img src="images/first-section-img.png" alt="">
+						<div class="last-section_author">
+							<div class="last-section_name">Симаков Александр Анатольевич</div>
+							<div class="last-section_post">Хирург, флеболог, бариатрический хирург</div>
+						</div>
+					</div>
+					<div class="last-section_info">
+						<div class="last-section_title">Александр Симаков <br> <span>врач-флеболог</span> <br>в Москве</div>
+						<form>
+							<div class="form_title">Запишитесь на прием к врачу онлайн</div>
+							<div class="line">
+								<div class="field">		
+									<img src="images/phone.svg" alt="">							
+									<input type="tel" placeholder="Ваш телефон">
+								</div>
+								<button type="submit">
+									<span>Отправить заявку</span>
+									<img src="images/arrow.svg" alt="">
+								</button>
+							</div>
+							<div class="form_politic">Нажимая кнопку, вы даете согласие на обработку персональных данных</div>
+						</form>
+					</div>					
+				</div>
+			</section>
+
 			
+
+
+			<footer>
+				<div class="cont">
+					<div class="footer_left">© 2023 Симаков Александр Анатольевич</div>
+					<div class="footer_right">
+						<div class="footer_pravo">Все права защищены</div>
+						<a href="#" class="footer_politic">Пользовательское соглашение</a>
+					</div>
+				</div>
 			</footer>
 
 
@@ -484,32 +546,36 @@
 
 	
 
-		<!-- Marquiz script start -->
+		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 		<script>
-			(function(w, d, s, o){
-			var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
-				if (document.readyState !== 'loading') Marquiz.init(o);
-				else document.addEventListener("DOMContentLoaded", function() {
-				Marquiz.init(o);
-				});
-			};
-			d.head.insertBefore(j, d.head.firstElementChild);
-			})(window, document, 'script', {
-				host: '//quiz.marquiz.ru',
-				region: 'eu',
-				id: '6454935f83484c0025f477ef',
-				autoOpen: false,
-				autoOpenFreq: 'once',
-				openOnExit: false,
-				disableOnMobile: false
-			}
-			);
+			$(window).on('load', () => {
+				ymaps.ready(() => {
+					let myMap = new ymaps.Map('map', {
+						center: [55.814608,37.647639],
+						zoom: 16,
+						controls: []
+					})
+							
+					// Кастомный маркер
+					// let myPlacemark = new ymaps.Placemark([55.814608,37.647639], {}, {
+					// 	iconLayout : 'default#image',
+					// 	iconImageHref : 'images/marker.svg',
+					// 	iconImageSize : [44, 50],
+					// 	iconImageOffset : [-116, -172]
+					// })
+	
+					myMap.geoObjects.add(myPlacemark)
+	
+					myMap.controls.add('zoomControl', {
+						position : {
+							right : '20px',
+							top   : '20px'
+						}
+					})
+					myMap.behaviors.disable('scrollZoom')
+				})
+			})
 		</script>
-		<!-- Marquiz script end -->
-
-
-		<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '6454935f83484c0025f477ef', buttonText: 'Рассчитать стоимость', bgColor: '#be8d55', textColor: '#ffffff', rounded: true, shadow: 'rgba(190, 141, 85, 0.5)', blicked: true, buttonOnMobile: true})</script>
-
 </body>
 
 </html>
