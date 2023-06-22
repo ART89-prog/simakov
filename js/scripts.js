@@ -25,16 +25,17 @@ $(() => {
 		spaceBetween: 10,
 		loop: true,
 		allowTouchMove: false,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
+
 		breakpoints: {
 			0: {
 				spaceBetween: 20,
 				slidesPerView: 3,
 				centeredSlides: true,
 				allowTouchMove: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
 			},
 			767: {
 				spaceBetween: 20,

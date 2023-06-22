@@ -392,7 +392,13 @@ header .btn:hover {
     background: #FE7449;
     color: #fff;
 }
+header .btn-mob {
+    display: none;
+}
 
+.about_img-mob {
+    display: none;
+}
 
 .first-section {
     background: url(../images/first-section-bg.png);
@@ -652,7 +658,9 @@ form .line input {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.about_sertificat .swiper-pagination {
+    display: none;
+}
 .service_item:hover .service_item-title {
     color: #fff;
 }
@@ -954,11 +962,11 @@ form .line input {
     letter-spacing: 0em;
 }
 
-.last-section form {
+/* .last-section form {
     max-width: 810px;
     width: 100%;
     margin-left: auto;
-}
+} */
 
 .last-section form .line {
     display: flex;
