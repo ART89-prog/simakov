@@ -383,6 +383,7 @@ header .btn {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     transition: all .4s;
+    margin-right: -109px;
 }
 
 header .btn:hover {
@@ -456,11 +457,15 @@ form .line input {
     height: 85px;
     border-radius: 100px;
     border: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
 }
 
 .first-section_img {
     position: absolute;
-    right: -210px;
+    right: -224px;
     bottom: 0;
     width: 587px;
     height: 798px;
@@ -518,7 +523,7 @@ form .line input {
     border-radius: 500px;
     position: absolute;
     bottom: 20px;
-    left: -70px;
+    left: -77px;
 }
 
 .first-section_name {
@@ -526,6 +531,7 @@ form .line input {
     font-weight: 500;
     line-height: 31px;
     margin-bottom: 9px;
+    letter-spacing: 0em;
 }
 
 .first-section_post {
@@ -544,7 +550,7 @@ form .line input {
 
 .service_title {
     position: absolute;
-    right: 0;
+    right: -105px;
     top: -60px;
     font-weight: 700;
     font-size: 300px;
@@ -943,6 +949,7 @@ form .line input {
     line-height: 39px;
     color: #fff;
     margin-bottom: 20px;
+    letter-spacing: 0em;
 }
 
 .last-section form {
