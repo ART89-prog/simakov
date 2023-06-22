@@ -20,6 +20,20 @@ $(() => {
 	})
 
 
+	var swiper = new Swiper(".about_sertificat .swiper", {
+		slidesPerView: 3,
+		spaceBetween: 10,
+		centeredSlides: true,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
+
+
+
+	
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.trapFocus = false

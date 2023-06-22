@@ -394,7 +394,7 @@ header .btn:hover {
 
 .first-section {
     background: url(../images/first-section-bg.png);
-    background-position: center bottom;
+    background-position: 100% bottom;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
@@ -409,12 +409,13 @@ header .btn:hover {
 
 .first-section_info {
     margin-top: 52px;
+    z-index: 2;
 }
 
 .first-section_title {
     font-size: 100px;
     font-weight: 300;
-    line-height: 130px;
+    line-height: 1.3;
     margin-bottom: 136px;
 }
 

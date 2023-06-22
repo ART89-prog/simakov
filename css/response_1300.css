@@ -1,5 +1,8 @@
 @media print, (max-width: 1300px) {
 
+    .first-section_img {
+        right: -30px;
+    }
 
 
 
