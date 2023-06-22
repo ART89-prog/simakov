@@ -365,6 +365,7 @@ header .menu .item a:hover {
     font-weight: 300;
     line-height: 28px;
     color: #000;
+    margin-right: 25px;
 }
 
 .header_logo img {
