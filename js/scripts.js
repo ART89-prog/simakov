@@ -23,7 +23,8 @@ $(() => {
 	var swiper = new Swiper(".about_sertificat .swiper", {
 		slidesPerView: 3,
 		spaceBetween: 10,
-		centeredSlides: true,
+		// centeredSlides: true,
+		allowTouchMove: false,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
