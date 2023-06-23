@@ -4,8 +4,7 @@
         display: none;
     }
     .first-section_img {
-        position: relative;
-        margin: 20px auto 0;
+        display: none;
     }
     .first-section form:before {
         display: none;

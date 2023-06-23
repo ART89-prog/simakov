@@ -218,7 +218,7 @@ button {
 
 .cont {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1340px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -404,7 +404,6 @@ header .btn-mob {
     background: url(../images/first-section-bg.png);
     background-position: 100% bottom;
     background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 20px;
 }
 
@@ -620,6 +619,7 @@ form .line input {
     background: #fff;
     transition: all .3s;
     position: relative;
+    min-height: 182px;
 }
 
 .service_item-title {
@@ -628,7 +628,7 @@ form .line input {
     line-height: 25px;
     color: var(--text_color);
     z-index: 2;
-    margin-bottom: 17px;
+    margin-bottom: 3px;
 }
 
 .service_item-link {
@@ -655,7 +655,6 @@ form .line input {
 .service_item:hover {
     background: url(../images/service-item-bg.svg), #FE7449;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
 }
 .about_sertificat .swiper-pagination {
@@ -699,7 +698,6 @@ form .line input {
     background: url(../images/callback_bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     padding: 97px 0 97px;
     margin-bottom: 20px;
 }
@@ -925,7 +923,6 @@ form .line input {
     background: url(../images/last-section-bg.png);
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 20px;
 }
 
