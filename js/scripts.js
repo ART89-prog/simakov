@@ -30,13 +30,13 @@ $(() => {
 			0: {
 				spaceBetween: 20,
 				slidesPerView: 3,
-				centeredSlides: true,
-				allowTouchMove: true,
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
 				},
-			},
+				centeredSlides: true,
+				allowTouchMove: true
+			},			
 			767: {
 				spaceBetween: 20,
 				slidesPerView: 3
