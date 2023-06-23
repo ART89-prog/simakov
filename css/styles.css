@@ -465,6 +465,7 @@ form .line input {
     height: 85px;
     border-radius: 100px;
     border: none;
+    font-family: var(--font_family);
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
@@ -775,8 +776,8 @@ form .line input {
 
 .about_img {
     margin-left: -300px;
-    width: 910px;
-    height: 768px;
+    width: 853px;
+    height: 681px;
 }
 
 .about_img img {
@@ -909,6 +910,11 @@ form .line input {
     height: 60px;
 }
 
+.contacts_block-icon img {
+    width: 100%;
+    height: 100%;
+}
+
 .contacts_block-adress {
     font-size: 28px;
     font-weight: 300;
@@ -935,9 +941,12 @@ form .line input {
 
 .last-section_info {
     margin-top: 175px;
-    margin-left: 250px;
+    margin-left: 305px;
 }
 
+.last-section_info form {
+    margin-left: 120px;
+}
 .last-section_title {
     font-size: 100px;
     font-weight: 300;
@@ -959,16 +968,9 @@ form .line input {
     letter-spacing: 0em;
 }
 
-/* .last-section form {
-    max-width: 810px;
-    width: 100%;
-    margin-left: auto;
-} */
-
 .last-section form .line {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .last-section_img {
@@ -1033,6 +1035,7 @@ form .line input {
     position: absolute;
     bottom: 26px;
     right: -150px;
+    backdrop-filter: blur(50px);
 }
 
 .last-section_name {
@@ -1118,6 +1121,7 @@ footer .cont {
 
 .modal_callback .line .field input {
     width: 100%;
+    font-family: var(--font_family);
 }
 
 .modal_callback-btn {
@@ -1162,7 +1166,19 @@ footer .cont {
 
 
 
-
+.btn-wrap {
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: none;
+}
 .btn-mobile {
     width: 100%;
     height: 60px;
@@ -1178,10 +1194,10 @@ footer .cont {
     align-items: center;
     justify-content: center;
     transition: all .4s;
-    position: fixed;
+    /* position: fixed;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-    display: none;
+    display: none; */
 }

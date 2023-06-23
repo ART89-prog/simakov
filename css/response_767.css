@@ -242,6 +242,10 @@
     .modal_callback-text br {
         display: none;
     }
+
+    .service_box-icon {
+        margin-bottom: 13px;
+    }
     
 
 

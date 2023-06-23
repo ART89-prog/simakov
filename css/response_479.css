@@ -76,9 +76,13 @@
     .last-section_info {
         margin-top: 95px;
     }
-    .btn-mobile {
+    .btn-wrap {
         display: block;
     }
+    footer {
+       padding: 30px 0 110px;
+    }
+
 
 
 

@@ -126,7 +126,7 @@
         height: 100%;
         background: #12AD7A;
         top: 0;
-        left: calc(0% - 1500px);
+        left: calc(0% - 1000px);
         z-index: 0;
     }
     .last-section button {
